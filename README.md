@@ -41,14 +41,14 @@ WITH events(id, occur_time, close_time) AS (
 Using data from [BigQuery sample dataset for GA4](https://console.cloud.google.com/bigquery?project=bigquery-public-data&p=bigquery-public-data&d=ga4_obfuscated_sample_ecommerce&page=dataset),
 create the following queries:
 
-### Daily (N-Day) Retention Query
+### I. Daily (N-Day) Retention Query
 
    Write a SQL query to calculate the daily retention of users.
    The query should consider user retention on a daily basis,
    it should show the percentage of users who returned on each subsequent day
    after their initial visit.
 
-### Daily Unbounded Retention Query
+### II. Daily Unbounded Retention Query
 
    Write a SQL query to calculate the daily unbounded retention of users.
    The query should consider user unbounded retention on a daily basis,
@@ -57,7 +57,8 @@ create the following queries:
    For example, for all new users who visited on a specific day,
    what percentage of users came back after 28 days (and not necessarily on day 28).
 
-Please note that you should utilize the `ga4_obfuscated_sample_ecommerce` dataset provided in BigQuery for both queries.
+Please note that you should utilize the `ga4_obfuscated_sample_ecommerce` dataset provided in BigQuery for both queries. 
+You can access the data freely via [BigQuery Sandbox](https://cloud.google.com/bigquery/docs/quickstarts/query-public-dataset-console).
 Feel free to use any relevant tables and columns available in the dataset to accomplish the task. 
 Provide clear aliases for the output columns, and ensure to provide explanations for any significant steps 
 or calculations in your queries to demonstrate your understanding of the process.
